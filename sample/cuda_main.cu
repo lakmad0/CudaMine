@@ -48,7 +48,7 @@
 #include <unistd.h>     /* getopt() */
 
 int      _debug;
-#include "../include/kmeans.h"
+#include "../include/cuda_mine.cuh"
 
 /*---< usage() >------------------------------------------------------------*/
 static void usage(char *argv0, float threshold) {
