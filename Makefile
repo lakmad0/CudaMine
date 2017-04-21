@@ -75,7 +75,7 @@ CUDA_CU_SRC = 'include/kmean/cuda_kmeans.cu'
 CUDA_C_OBJ = $(CUDA_C_SRC:%.cu=%.o)
 CUDA_CU_OBJ = $(CUDA_CU_SRC:%.cu=%.o)
 
-cuda: cuda_main
+cuda: sample/cuda_main
 cuda_main: $(CUDA_C_OBJ) $(CUDA_CU_OBJ)
 	$(NVCC) $(LDFLAGS) -o $@ $(CUDA_C_OBJ) $(CUDA_CU_OBJ)
 
